@@ -7,6 +7,7 @@ const Home = () => {
         <div>
             <div className='bg-light-grey'>
                 <Marquee>***Admissions open for year 2022***</Marquee>
+                
             </div>
             <SchoolImg />
 

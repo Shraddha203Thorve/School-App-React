@@ -3,6 +3,8 @@ const mongoose = require("mongoose");
 const dotenv = require('dotenv');
 const app = express();
 const cors = require("cors");
+import swaggerUi from 'swagger-ui-express'
+import * as swaggerDocument from './swagger.json'
 dotenv.config();
 
 app.use(express.json());
@@ -30,6 +32,7 @@ mongoose
     console.log("Connected to db");
 
     app.listen(process.env.PORT, () => {
+      app.use('/swagger', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
       console.log("Server is running");
     });
   }).catch(()=>{

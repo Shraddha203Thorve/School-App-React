@@ -1,0 +1,36 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "TypeScript-NodeJS-Express-REST-API School Server",
+        "description": "API for school-App by minimal way using swagger",
+        "license": {
+            "name": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+        }
+    },
+    "definitions": {
+        "admission": {
+            "type": "object",
+            "properties": {
+                "category": {
+                    "type": "string"
+                },
+                "options": {
+                    "type": "object",
+                    "properties": {
+                        "grade": {
+                            "type": "string"
+                        },
+                        "fees": {
+                            "type": "number"
+                        },
+                        "seats": {
+                            "type": "number"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
