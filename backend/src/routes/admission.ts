@@ -3,6 +3,7 @@ import { Request, Response } from 'express'
 const admission = require("../model/Admission")
 
 
+
 router.post('/add', (req: Request, res: Response) => {
 
     console.log('inside admission')
