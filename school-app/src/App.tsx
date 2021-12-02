@@ -13,12 +13,12 @@ import PrePrimary from './components/pages/PrePrimary';
 import Primary from './components/pages/Primary';
 import Secondary from './components/pages/Secondary';
 
+
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
       <Header/>
-     
       <Routes>
       <Route  path="/*" element={<PageNotFound/>}/>
       <Route  path="/" element={<Home/>}/>

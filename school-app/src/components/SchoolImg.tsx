@@ -3,8 +3,8 @@ import Carousel from 'react-bootstrap/Carousel'
 
 const SchoolImg = () => {
     return (
-        <div>
-            <h2>Learning Curve Public School</h2>
+        <div className="mt-4">
+            {/* <h2>Learning Curve Public School</h2> */}
             <Carousel>
                 <Carousel.Item interval={1000}>
                 <img

@@ -22,7 +22,6 @@
   width: 300px;
   margin-left: 300px;
   text-align: justify;
-
 }
 
 .App-header {
@@ -56,8 +55,47 @@ background-color:rgb(167, 163, 163)
   flex-direction: column;
   height: 100%;
 }
+.brand{
+    justify-content: center;
+}
+
 .align{
-  text-align: justify;
+  margin-top: 10px;
+  text-align: left;
+}
+.mid-background{
+  background-color: rgb(196, 184, 79);
+ 
+}
+
+/* social-flow */
+.social-container {
+  background: #eee;
+  padding: 25px 30px;
+ height: 5px;
+}
+a.social {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+a.social:hover {
+  transform: translateY(-2px);
+}
+a.youtube {
+  color: #eb3223;
+}
+
+a.facebook {
+  color: #4968ad;
+}
+
+a.twitter {
+  color: #49a1eb;
+}
+
+a.instagram {
+  color: black;
 }
 @keyframes App-logo-spin {
   from {
