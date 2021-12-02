@@ -1,10 +1,11 @@
+import swaggerUi from 'swagger-ui-express'
+import * as swaggerDocument from './swagger.json'
 const express = require("express");
 const mongoose = require("mongoose");
 const dotenv = require('dotenv');
 const app = express();
 const cors = require("cors");
-import swaggerUi from 'swagger-ui-express'
-import * as swaggerDocument from './swagger.json'
+
 dotenv.config();
 
 app.use(express.json());
